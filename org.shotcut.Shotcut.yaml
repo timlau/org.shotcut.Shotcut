@@ -124,7 +124,8 @@ modules:
       - /bin
     sources:
       - type: archive
-        url: https://www.ladspa.org/download/ladspa_sdk_1.17.tgz
+        #url: https://www.ladspa.org/download/ladspa_sdk_1.17.tgz
+        url: http://www.ladspa.org/download/ladspa_sdk_1.17.tgz
         sha256: d9d596171d93f9c226fcdb7e27c6f917422ac487efe2c05e0a18094df4268061
 
   - name: jack2
@@ -270,11 +271,12 @@ modules:
     config-opts:
       - CONFIG+=release
       - CONFIG+=force_debug_info
-      - SHOTCUT_VERSION=22.01.30
+      - SHOTCUT_VERSION=22.03.17
     post-install:
       - install -d /app/extensions/Plugins
     sources:
       - type: git
-        url: https://github.com/mltframework/shotcut.git
-        commit: 05b24fa529f1d6c0a7193f1e0411f6be38b617ee
-        tag: v22.01.30
+        #url: https://github.com/mltframework/shotcut.git
+        path: /home/tim/udv/test/shotcut
+        #commit: 05b24fa529f1d6c0a7193f1e0411f6be38b617ee
+        #tag: v22.01.30
